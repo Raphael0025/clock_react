@@ -1,38 +1,128 @@
 .App {
   text-align: center;
+  color: #fff;
+  height: 25rem;
+  width: 35rem;
+  padding: 3em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.title{
+  font-size: 3.125rem;
+  margin: 0;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.fs{
+  font-size: 1.875rem;
+  margin: 0;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.fs2{
+  font-size: 5rem;
+}
+
+.control{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.timer{
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  border: 7px solid #13353a;
+  border-radius: 3.125rem;
+  padding: 1.5em;
+  margin: 1.2em;
+  width: 13.875em;
+  height: 10rem;
 }
 
-.App-link {
-  color: #61dafb;
+.timer-control{
+  display: flex;
+  flex-direction: row;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+  .controls{
+    display: flex;
+    flex-direction: row;
   }
-  to {
-    transform: rotate(360deg);
+    .controls:hover, .arrow-icon:hover{
+      cursor: pointer;
+    }
+    .ai{
+      margin: 0;
+      padding: 0;
+      width: 1.2rem;
+    }
+    .ai2{
+      margin-left: 1rem;
+    }
+
+.length-control{
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  margin: 0;
+}
+
+span{
+  color: red;
+}
+
+.arrow-icon {
+  font-size: 2.5em;
+  padding: 0 0.5rem;
+}
+
+@media screen and (max-width: 499px) {
+  .App {
+    width: 100%;
+    height: 100%;
+    padding: 0em;
+  }
+
+  .title {
+    font-size: 2.5rem;
+  }
+
+  .fs {
+    font-size: 1.5rem;
+  }
+
+  .fs2 {
+    font-size: 3.75rem;
+  }
+
+  .timer {
+    width: 100%;
+    height: 8rem;
+    padding: 1em;
+    margin: 1em 0;
+  }
+
+  .timer-control {
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .arrow-icon {
+    font-size: 2em;
+    padding: 0 0.3rem;
+  }
+}
+
+
+@media screen and (max-width: 532px){
+  .title{
+    margin-bottom: 1rem;
+  }
+  .length-control{
+    flex-direction: column;
   }
 }
