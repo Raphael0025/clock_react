@@ -1,5 +1,5 @@
 import './App.css';
-import React, { useState } from 'react';
+import React from 'react';
 import { TiArrowDownThick, TiArrowUpThick, TiMediaPlay, TiMediaPause, TiArrowRepeat } from "react-icons/ti";
 import beepSound from './asset/beep-06.mp3';
 
