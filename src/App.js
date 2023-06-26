@@ -28,7 +28,7 @@ class App extends React.Component {
     this.decreaseSession = this.decreaseSession.bind(this);
     this.reset = this.reset.bind(this);
   }
-
+  
   startTimer = () => {
     if (this.state.timer) {
       clearInterval(this.state.timer);
